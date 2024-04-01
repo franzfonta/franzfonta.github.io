@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /*
 * littlelink V1
 * https://littlelink.com
@@ -88,13 +91,13 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 100%;
   color-scheme: light dark;
+  background: #000000;
 }
 body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 /* Typography
@@ -103,6 +106,7 @@ h1 {
   margin-top: 0;
   margin-bottom: 16px;
   font-weight: 800;
+  font-family: 'Bebas Neue', Arial, sans-serif;
 }
 h1 {
   font-size: 24px;
