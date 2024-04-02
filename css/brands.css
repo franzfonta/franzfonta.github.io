@@ -46,18 +46,21 @@ button {
   outline: none;
   border-radius: 8px;
   cursor: pointer;
-  
-}     
+
+}
+
 button:hover,
 .button:focus {
   color: #212121;
   border-color: #888;
   outline: #7AB8FF solid 3px
 }
+
 .button.button-primary {
   color: #fff;
   filter: brightness(90%);
 }
+
 .button.button-primary:hover,
 .button.button-primary:focus {
   color: #fff;
@@ -82,9 +85,31 @@ button:hover,
   color: #FF4F00;
   background-color: #000000;
   border: 1px solid #FF4F00;
+  /* Aggiungi un effetto glow */
+  box-shadow: 0 0 8px #FF4F00;
+  transition: box-shadow 0.3s ease-in-out;
 }
+
 .button.button-default:hover,
 .button.button-default:focus {
   color: #FFFFFF;
   background-color: #FF4F00;
+}
+
+@keyframes glow-animation {
+  0% {
+    box-shadow: 0 0 8px #FF4F00;
+  }
+
+  50% {
+    box-shadow: 0 0 12px #FF4F00;
+  }
+
+  100% {
+    box-shadow: 0 0 8px #FF4F00;
+  }
+}
+
+.button.button-default {
+  animation: glow-animation 2s ease-in-out infinite;
 }
